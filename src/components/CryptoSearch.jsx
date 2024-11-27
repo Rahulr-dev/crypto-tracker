@@ -81,7 +81,7 @@ const CryptoSearch = ({ onSearch, searchText, onRefresh }) => {
   return (
     <div>
       <Row className="align-items-center mb-3">
-        <Col sm={8}>
+        <Col xs={12} sm={12} md={6} lg={6}>
           <InputGroup>
             <Form.Control
               type="text"
@@ -95,14 +95,14 @@ const CryptoSearch = ({ onSearch, searchText, onRefresh }) => {
           </InputGroup>
         </Col>
 
-        <Col sm={2}>
+        <Col xs={12} sm={12} md={3} lg={2} className="mt-2 mt-sm-2">
           <CurrencySelector
             currentCurrency={currency}
             onCurrencyChange={handleCurrencyChange}
           />
         </Col>
 
-        <Col sm={2}>
+        <Col xs={12} sm={12} md={3} lg={2} className="mt-2 mt-sm-2">
           <RefreshButton onClick={handleRefresh} />
         </Col>
       </Row>

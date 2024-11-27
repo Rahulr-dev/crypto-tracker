@@ -56,3 +56,24 @@
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQRJREFUSEvt07EuBFEUBuBv2V7lFbRKiUYpQU+yDQovoNF4BbUE3fIAngDVbrsdiRdQsULNTUYimzVz78ywijvtnHO+e/650zGjpzMjV4b/LPkcdY761xL4l5drGcdYaLD2A47wOjmjbON7LDVAv1pPPuHDFPgJiy3AV+ilwNu4xHwD/BlrGKXAoTbgfXRr4C9Yx3Bab8yt3inwlM3HBTr46cAxcOjdxQXmIjZ/wwbuympj4TBjD+cVeEA3cVt1wBS4Cg/oFm6q0PA+FQ49+zib2Py92DQKrQuHvgOcFgeP+qapv1NZaqtYwTUeY+L9XlMn6lRjan2GW4kxZkiOOialVmo+ABESIR9f33lDAAAAAElFTkSuQmCC') no-repeat right center;
   background-size: 16px;
 }
+
+/* Make the table horizontally scrollable */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+}
+
+/* Ensure columns are visible on all screen sizes */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Optionally, adjust the font size or padding for better readability on smaller screens */
+  .table th,
+  .table td {
+    font-size: 0.9rem; /* Adjust font size to fit content on smaller screens */
+    padding: 0.5rem;   /* Adjust padding for mobile devices */
+  }
+}
